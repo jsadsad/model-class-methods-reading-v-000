@@ -11,7 +11,7 @@ class PostsController < ApplicationController
         @posts = Post.where("created_at <?", Time.zone.today.beginning_of_day)
       end
     else
-      @post = Post.all
+      @posts = Post.all
     end
   end
 
