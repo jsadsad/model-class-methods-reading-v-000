@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
     @authors = Author.all
   end
 
