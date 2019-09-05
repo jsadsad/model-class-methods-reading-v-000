@@ -2475,3 +2475,16 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/posts" for 50.255.9.121 at 2019-09-05 23:54:18 +0000
+Cannot render console from 50.255.9.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 2.1ms)
+
+
