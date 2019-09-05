@@ -1,4 +1,9 @@
 <h1>Believe It Or Not I'm Blogging On Air</h1>
+<div>
+  <h3>Filter Posts:</h3>
+  <%= form_tag("/posts", method: "get") do %>
+</div>
+
 <% @posts.each do |post| %>
   <div>
     <h2><%= link_to post.title, post_path(post) %></h2>
