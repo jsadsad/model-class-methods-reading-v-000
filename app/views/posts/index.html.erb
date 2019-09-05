@@ -1,8 +1,6 @@
 <h1>Believe It Or Not I'm Blogging On Air</h1>
 <% @posts.each do |post| %>
   <div>
-    <h3>Filter Posts:</h3>
-    <%= form_tag("/posts", method: "get") do %>
     <h2><%= link_to post.title, post_path(post) %></h2>
     <h3>by: <%= link_to post.author.name, author_path(post.author) %></h3>
     <p><%= post.description %></p>
