@@ -2,6 +2,8 @@
 <div>
   <h3>Filter Posts:</h3>
   <%= form_tag("/posts", method: "get") do %>
+    <%= select_tag "author", option_from_collection_for_select(Author.all, "id", "name"), include_blank: true %>
+  <% end %>
 </div>
 
 <% @posts.each do |post| %>
