@@ -1383,3 +1383,25 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 107ms (Views: 103.9ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/authors/13" for 50.255.9.121 at 2019-09-05 22:46:57 +0000
+Cannot render console from 50.255.9.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 13]]
+  Rendered authors/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 68ms (Views: 63.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/authors/14" for 50.255.9.121 at 2019-09-05 22:47:00 +0000
+Cannot render console from 50.255.9.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 14]]
+  Rendered authors/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
