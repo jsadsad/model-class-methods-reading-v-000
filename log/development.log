@@ -2068,3 +2068,14 @@ Processing by PostsController#index as
 Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/posts.10" for 50.255.9.121 at 2019-09-05 23:14:48 +0000
+Cannot render console from 50.255.9.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `helper_methods' for PostsController:Class
+Did you mean?  helper_method
+               _helper_methods
+               _helper_methods=
+               _helper_methods?):
+  
+app/controllers/posts_controller.rb:2:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<top (required)>'
