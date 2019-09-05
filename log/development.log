@@ -2201,3 +2201,27 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/posts/10" for 50.255.9.121 at 2019-09-05 23:24:31 +0000
+Cannot render console from 50.255.9.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&author=&commit=Filter" for 50.255.9.121 at 2019-09-05 23:24:53 +0000
+Cannot render console from 50.255.9.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "author"=>"", "commit"=>"Filter"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
